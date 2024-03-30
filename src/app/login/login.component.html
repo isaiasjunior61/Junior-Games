@@ -1,0 +1,47 @@
+<!-- Este é o código original: -->
+<main>
+  <section id="section-login">
+    <h2>Login</h2>
+    <form class="row g-3">
+
+      <label for="staticUsuario" class="visually-hidden">Usuário</label>
+      <input type="text" name="usuario" [(ngModel)]="usuario" class="form-control" id="staticUsuario"
+        placeholder="email@exemplo.com">
+
+      <br>
+
+      <label for="inputPassword2" class="visually-hidden">Senha</label>
+      <input type="password" name="senha" [(ngModel)]="senha" class="form-control" id="inputPassword2"
+        placeholder="senha">
+      <br>
+      <button type="submit" class="btn btn-primary mb-3" (click)="fazerLogin()">Login</button>
+
+    </form>
+  </section>
+</main>
+
+<!-- 
+  Código modificado conforme o PDF da aula
+  <main>
+  <section id="section-login">
+    <h2>Login</h2>
+    <form class="row g-3">
+      <div>
+        <label for="usuario">Usuário</label>
+        <input name="usuario" required type="text" [(ngModel)]="usuario" placeholder="email@exemplo.com">
+
+        <br>
+
+        <label for="senha">Senha</label>
+        <input name="senha" type="password" [(ngModel)]="senha" placeholder="senha">
+        <br>
+      </div>
+      <button (click)="fazerLogin()">Login</button>
+
+    </form>
+  </section>
+</main> -->
+
+
+
+  
